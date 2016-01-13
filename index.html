@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="mainSite">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <title>Robert Tribbia - rtribbia.com</title>
+    <!-- CSS -->
+    <!--===============================================================-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- NAVBAR-->
+  <!--===============================================================-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" data-scroll href="#home"><img src="assets/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-scroll href="#portfolio">Portfolio</a></li>
+            <li><a href="http://rtribbia.com/RobertTribbiaResume2015.pdf" target="_blank">Resume</a></li>
+            <li><a href="https://github.com/rtribbia" target="_blank">GitHub</a></li>
+            <li><a data-scroll href="#contact"><span class="contact">Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      
+
+      
+  <ng-view></ng-view>
+
+    <!-- CONTACT-->
+    <!--===============================================================-->
+    <div class="bg-contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h3>Feel free to contact me for your next project</h3>
+
+            <a href="mailto:rtribbia@gmail.com" class="mail"><span class="glyphicon glyphicon-envelope"></span>E-MAIL</a>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER-->
+    <!--===============================================================-->
+    <div class="bg-footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <a href="https://github.com/rtribbia" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/robert-tribbia-bb087a39" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="mailto:rtribbia@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+
+     
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER-BOTTOM-->
+    <!--===============================================================-->
+    <div class="bg-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="copyright">2015 &copy; Robert Tribbia - All Rights Reserved</p>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-inline pull-right">
+              <li class="border-right"><a href="#home" data-scroll>Top</a></li>
+              <li class="border-right"><a href="#portfolio" data-scroll>Portfolio</a></li>
+              <li class="border-right"><a href="#skills" data-scroll>Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT-->
+    <!--===============================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
+    <script src="js/vendor/angular-resource.js"></script>
+      
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/jRespond.min.js"></script>
+      
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/rt-projectdetails.js"></script>
+    <script src="js/directives/rt-projects.js"></script>
+    <script src="js/directives/rt-websitedetails.js"></script>
+    <script src="js/directives/rt-websites.js"></script>      
+    <script src="js/directives/rt-resume.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/project.js"></script>
+    <script src="js/services/website.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/projects-index-controller.js"></script>
+    <script src="js/controllers/websites-index-controller.js"></script>
+    <script src="js/controllers/projects-show-controller.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+  <!-- Project Header Area-->
+    <!--===============================================================-->
+    <div class="bg-intro-blog" id="home">
+      <div class="layer-intro-blog">
+      </div>
+    </div>
+
+
+
+
+    <!-- Project Content-->
+    <!--===============================================================-->
+    <div class="bg-post">
+      <div class="container">
+        <div class="row row-blog">
+          <div class="col-md-8 col-md-offset-2 wrapper-blog">
+
+            <div class="row">
+                <div ng-if="loading" class="text-center"><img src="assets/images/loading.gif"></div>
+              <div class="col-sm-12" ng-if="loading == false">
+                  
+<!--                  START DYNAMIC CONTENT-->
+        
+                <h1 class="title-post">{{project.title}}</h1>
+                <img class="img-responsive img-featured" src="{{project.attachments[1].url}}" alt="featured image">
+                <div class="projectButtons">
+                    <a ng-if="project.custom_fields.live_version[0].length" href="{{project.custom_fields.live_version[0]}}" class="btn btn-success btn-md" role="button" target="_blank">Live Demo</a>
+                    <a ng-if="project.custom_fields.github[0].length" href="{{project.custom_fields.github[0]}}" class="btn btn-default btn-md" role="button" target="_blank">View on GitHub</a>
+                  </div>
+                <div ng-bind-html="project.content"></div>
+                <h2 class="sectionTitle">Features</h2>
+                <ul>
+                    <li ng-repeat="feature in project.custom_fields.project_features">{{feature}}</li>
+                </ul>
+                <h2 class="sectionTitle">Languages</h2>
+                <ul>
+                    <li ng-repeat="language in project.custom_fields.languages">{{language}}</li>
+                </ul>
+                <h2 class="sectionTitle">Libraries Used</h2>
+                <ul>
+                    <li ng-repeat="library in project.custom_fields.libraries"><a href="{{library.url}}">{{library.lib}}</a></li>
+                </ul>
+<!--                  END DYNAMIC CONTENT-->              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

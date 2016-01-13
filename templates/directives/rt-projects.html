@@ -1,0 +1,18 @@
+<div class="bg-portfolio" id="portfolio">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="title">JavaScript Projects</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row row-portfolio">
+        <div ng-if="loading" class="text-center"><img src="assets/images/loading.gif"></div>
+        <div ng-repeat="project in projects">
+             <rt-projectdetails header="project.title" body="project" image="project.attachments[0].url" id="project.id" ng-show="project.custom_fields.fp_visible[0] == 'yes'"> </rt-projectdetails>
+        </div>
+    </div>
+
+      </div>
+    </div>

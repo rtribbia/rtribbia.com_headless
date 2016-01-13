@@ -1,0 +1,17 @@
+
+
+
+
+
+<div class="col-sm-4 margin-bottom-xs">
+
+    <a class="lightbox wrapper-portfolio portfolio-sites" href="{{body.url[0]}}" style="background-image: url({{image}});">
+
+        <div class="text-center portfolio-item-site">
+            <h2 class="site-title" >{{header}}</h2>
+            <p class="category site-details"><strong>{{body.date_created[0]}} - <span class="{{body.site_status[0]}}">{{body.site_status[0]}}</span></strong><br>{{body.technologies_used.join(', ')}}</p>
+        </div>
+        
+    </a>
+</div>
+

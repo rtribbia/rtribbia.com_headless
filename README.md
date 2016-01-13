@@ -1,2 +1,4 @@
-# rtribbia.com_headless
-AngularJS front-end to rtribbia.com
+# rtribbia.com
+This repo contains the AngularJS front-end to rtribbia.com, powered by WordPress CMS.
+
+

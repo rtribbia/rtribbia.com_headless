@@ -1,0 +1,24 @@
+<div class="bg-portfolio" id="portfolio">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="title">Websites</h2>
+        <hr>
+      </div>
+    </div>
+
+
+    <div class="row row-portfolio">
+        <div ng-if="loading" class="text-center"><img src="assets/images/loading.gif"></div>
+        <div ng-repeat="website in websites | orderBy:'-custom_fields.date_created[0]'">
+            
+             <rt-websitedetails header="website.title" body="website.custom_fields" image="website.attachments[0].url" ng-show="website.custom_fields.fp_visible[0] == 'yes'"> </rt-websitedetails>
+        </div>
+       
+    </div>
+
+      </div>
+    </div>
+
+
