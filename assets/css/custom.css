@@ -68,6 +68,7 @@ div.portfolio-item-project {
     width: auto;  
     border-radius: inherit;
     border: 3px solid;
+    margin-top: 15px;
     background-color:rgba(0, 0, 0, 0.4);
 }
     
